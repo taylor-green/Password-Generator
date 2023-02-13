@@ -28,7 +28,7 @@ User can choose to generate a random password between 8 and 128 characters that 
 
 The following image shows the web application's appearance and functionality:
 
-![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./assets/01-html-css-git-homework-demo.png)
+![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./assets/03-javascript-homework-demo.png)
 
 The webpage can be found at https://taylor-green.github.io/Week-1-Challenge/
 

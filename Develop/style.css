@@ -3,7 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
-
+/* html body */
 html,
 body,
 .wrapper {
@@ -22,7 +22,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-
+/* header */
 header {
   text-align: center;
   padding: 20px;
@@ -71,7 +71,7 @@ header {
   display: block;
   clear: both;
 }
-
+/* button */
 .btn {
   border: none;
   background-color: rgb(9, 154, 207);
@@ -96,7 +96,7 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
+/* text field */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
