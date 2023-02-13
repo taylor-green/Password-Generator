@@ -21,15 +21,14 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", function () {
-  document.querySelector('#password');
-  writePassword();
-
-});
+generateBtn.addEventListener("click", writePassword); 
+ 
 
 // password logic
 var generatePassword = function () {
-  passLength = prompt('Select a password length: Min 8, Max 128.');
+  charset = '';
+  password = '';
+  passLength = parseInt(prompt('Select a password length: Min 8, Max 128.'));
 
   if (passLength >= 8 && passLength <= 128) {
     // include uppercase?
@@ -54,17 +53,20 @@ var generatePassword = function () {
     var passTypeSpec = confirm('Include specials?');
     if (passTypeSpec) {
       charset += chars4
+
+    
     }
 
     for (var i = 0; i < passLength; i++) {
-      var randomChar = charset[Math.floor(Math.random() * charset.length)]
-      console.log(randomChar)
-
-
+      var randomChar = charset[Math.floor(Math.random() * charset.length)];
+      // console.log(randomChar)
+      password += randomChar;
     }
 
-    var passLength = '';
-    console.log(passLength);
+    return password;
+
+    // var passLength = '';
+    // console.log(passLength);
   } else {
     alert('Be sure your submission is between 8 and 128 characters.');
 
